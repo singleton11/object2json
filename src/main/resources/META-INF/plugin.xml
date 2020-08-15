@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>com.github.singleton11.object2json</id>
+    <name>Object 2 Json</name>
+    <vendor email="laprocom@yandex.ru" url="https://singleton11.github.com">Anton Prokhorov</vendor>
+
+    <description><![CDATA[
+    Generate JSON from object definition. This plugin uses faker to create sample data.
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="com.github.singleton11.MainAction" class="com.github.singleton11.MainAction" text="Generate Json"
+                description="Generate json from object definition"/>
+    </actions>
+</idea-plugin>
